@@ -25,5 +25,9 @@ public class AnimateHandOnInput : MonoBehaviour
     {
         animator.SetFloat("Trigger", pinchAnimationAction.action.ReadValue<float>());
         animator.SetFloat("Grip", grabAnimationAction.action.ReadValue<float>());
+        if(animator.GetFloat("Trigger") > 0.5f)
+        {
+            Debug.Log("Trigger");
+        }
     }
 }
