@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -25,9 +23,6 @@ public class AnimateHandOnInput : MonoBehaviour
     {
         animator.SetFloat("Trigger", pinchAnimationAction.action.ReadValue<float>());
         animator.SetFloat("Grip", grabAnimationAction.action.ReadValue<float>());
-        if(animator.GetFloat("Trigger") > 0.5f)
-        {
-            Debug.Log("Trigger");
-        }
+       
     }
 }
