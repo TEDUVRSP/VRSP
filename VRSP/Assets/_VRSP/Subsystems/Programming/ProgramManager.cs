@@ -28,18 +28,14 @@ public class ProgramManager : MonoBehaviour
     public void BeginLinking(ProgramFragment fragment)
     {
         _currentFragment = fragment;
-        Debug.Log("begin fragment", fragment.gameObject);
     }
 
     public void EndLinking(ProgramFragment fragment)
     {
-        Debug.Log("end fragment", fragment.gameObject);
-
         if (fragment == null || fragment == _currentFragment)
             return;
-        
+       
         _currentFragment.Link(fragment);
-
         _currentFragment = null;
     }
 
