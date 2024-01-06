@@ -53,6 +53,11 @@ public class HandPhysics : MonoBehaviour
     {
         if (!hapticFeedbackOnCollision) return;
 
+        SendHapticImpulse0101();
+    }
+
+    public void SendHapticImpulse0101()
+    {
         _actionBasedController.SendHapticImpulse(0.1f, 0.1f);
     }
 }

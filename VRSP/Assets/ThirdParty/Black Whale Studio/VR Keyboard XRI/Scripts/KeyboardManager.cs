@@ -99,7 +99,7 @@ namespace Keyboard
             switchNumberSpecialButton.gameObject.SetActive(false);
             numbersKeyboard.SetActive(false);
             specialCharactersKeyboard.SetActive(false);
-
+            
             if (!autoCapsAtStart) return;
             ActivateShift();
             UpdateShiftButtonAppearance();
