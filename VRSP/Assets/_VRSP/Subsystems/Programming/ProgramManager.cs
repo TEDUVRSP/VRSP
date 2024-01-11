@@ -39,7 +39,7 @@ public class ProgramManager : MonoBehaviour
         _currentFragment = null;
     }
 
-    private bool CheckProgram()
+    public bool CheckProgram()
     {
         for (var index = 0; index < _targetProgram.Count-1; index++)
         {
@@ -48,6 +48,14 @@ public class ProgramManager : MonoBehaviour
         }
 
         return true;
+    }
+
+    public void ResetConnections()
+    {
+        foreach (var fragment in _targetProgram)
+        {
+            fragment.ResetConnection();
+        }
     }
 
     #endregion

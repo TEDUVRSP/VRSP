@@ -5,11 +5,11 @@ namespace WiseMonkeES.Util.Stepbase
 {
     public abstract class Stepbase : MonoBehaviour
     {
-        [SerializeField] private UnityEvent OnStepStart;
-        [SerializeField] private UnityEvent OnStepComplete;
+        [SerializeField] protected UnityEvent OnStepStart;
+        [SerializeField] protected UnityEvent OnStepComplete;
         public string description;
         public int StepIndex { get; set; }
-        [SerializeField] private bool _isComplete;
+        [SerializeField] protected bool _isComplete;
         
         
         public virtual void StartStep()
