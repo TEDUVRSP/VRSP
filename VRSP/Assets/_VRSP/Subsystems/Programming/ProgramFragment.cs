@@ -49,10 +49,14 @@ namespace _VRSP.Subsystems.Programming
             lineRenderer.SetPosition(0,transform.position);
             lineRenderer.SetPosition(1,target.transform.position);
         }
-
-        #endregion
-
-
         
+        public void ResetConnection()
+        {
+            linkedFragment = null;
+            lineRenderer.SetPosition(0, transform.position);
+            lineRenderer.SetPosition(1, transform.position);
+        }
+        
+        #endregion
     }
 }
