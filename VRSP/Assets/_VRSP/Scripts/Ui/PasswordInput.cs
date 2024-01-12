@@ -16,7 +16,7 @@ public class PasswordInput : MonoBehaviour
 
     public void ChangePanel()
     {
-        if (_inputField.text.Equals("Stacy2016")) 
+        if (_inputField.text.Equals("Stacy.2016")) 
         {
             gameObject.SetActive(false);
             desktopPanel.SetActive(true);
