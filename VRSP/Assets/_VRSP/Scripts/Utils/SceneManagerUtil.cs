@@ -12,6 +12,7 @@ public class SceneManagerUtil : MonoBehaviour
         SceneManager.LoadScene(targetScene);
     }
 
+    [ContextMenu("MoveToNextScene")]
     public void MoveToNextScene()
     {
         ChangeScene(SceneManager.GetActiveScene().buildIndex+1);
